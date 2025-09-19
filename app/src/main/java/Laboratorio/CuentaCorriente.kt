@@ -24,22 +24,19 @@ class CuentaCorriente(
         }
     }
 
-    override fun consignar(cantidad: Float)
-    {
-        if (cantidad > 0)
-        {
-            if (sobregiro > 0)
-            {
-                val cubrir = minOf(cantidad, sobregiro)
-                sobregiro -= cubrir
-                saldo += (cantidad - cubrir)
-            }
-            else
-            {
-                super.consignar(cantidad)
-            }
-            numConsignaciones++
+    override fun consignar(cantidad: Float) {
+        if (cantidad <= 0)
+            return
+
+        if (sobregiro <= 0) {
+            super.consignar(cantidad)
+        } else {
+            val cubrir = minOf(cantidad, sobregiro)
+            sobregiro -= cubrir
+            saldo += (cantidad - cubrir)
         }
+
+        numConsignaciones++
     }
 
     override fun extractoMensual()
