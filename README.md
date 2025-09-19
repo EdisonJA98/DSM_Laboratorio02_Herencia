@@ -4,6 +4,6 @@ Este repositorio contiene la solución al ejercicio del tema de "Herencia" en Ko
 
 ## 👥 Participantes
 
-| Apellidos        | Nombres       | Código   | Correo                       |
-|------------------|--------------|----------|-------------------------------|
-| Javier Ayala     | Edison Juan  | 20200103 | edisonjuan.javier@unmsm.edu.pe|
+| Apellidos    | Nombres      | Código   | Correo                        |
+| Pachas Oshiro| Kojiro Andre | 22200120 | kojiro.pachas@unmsm.edu.pe    |
+| Javier Ayala | Edison Juan  | 20200103 | edisonjuan.javier@unmsm.edu.pe|
